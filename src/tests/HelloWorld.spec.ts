@@ -10,6 +10,6 @@ describe('HelloWorld.vue', () => {
         }
     });
     test('renders props.msg when passed', () => {
-        expect(wrapper.html()).includes('Hello World');
+        expect(wrapper.html()).includes('Hello Worlds');
     });
 });
