@@ -5,10 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test:unit": "vitest",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue/test-utils": "^2.4.4",
+    "happy-dom": "^13.5.0",
+    "url": "^0.11.3",
+    "vitest": "^1.3.1",
     "vue": "^3.4.19"
   },
   "devDependencies": {

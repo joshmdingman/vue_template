@@ -4,6 +4,7 @@ import { ref } from 'vue'
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+const info = ref('HelloWorld.vue')
 
 function increment() {
   count.value++
@@ -12,6 +13,7 @@ function increment() {
 
 <template>
   <h1>{{ msg }}</h1>
+  <h2>{{ info }}</h2>
 
   <div class="card">
     <button type="button" @click="increment()">count is {{ count }}</button>
