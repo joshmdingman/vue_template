@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, dirname } from 'vite'
 import path from 'path'
 import vue from '@vitejs/plugin-vue'
 
@@ -7,11 +7,11 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src'),
     },
   },
   test: {
-    environment: "jsdom",
-    globals: true,
-  },
+    testMatch: ['**/*.spec.ts'],
+    environment: 'happy-dom'
+  }
 })
