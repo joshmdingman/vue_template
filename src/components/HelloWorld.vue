@@ -9,6 +9,7 @@ const info = ref('HelloWorld.vue')
 function increment() {
   count.value++
 }
+
 </script>
 
 <template>
